@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus Vivobook"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-07 09:33:16 PM"/>
+        <attribute name="created" value="QXN1cyBWaXZvYm9vaztMQVBUT1AtSUI1OEk5U0E7MjAyMy0wMy0wNzswODo1NDo0MSBQTTszNjA5"/>
+        <attribute name="edited" value="QXN1cyBWaXZvYm9vaztMQVBUT1AtSUI1OEk5U0E7MjAyMy0wMy0wNzswOTozMzoxNiBQTTsxOzM3MTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bill1, bill2, bill3, terbesar" type="Integer" array="False" size=""/>
+            <input variable="bill1"/>
+            <input variable="bill2"/>
+            <input variable="bill3"/>
+            <assign variable="terbesar" expression="bill1"/>
+            <if expression="bill2 &gt; terbesar">
+                <then>
+                    <assign variable="terbesar" expression="bill2"/>
+                </then>
+                <else>
+                    <assign variable="terbesar" expression="bill3"/>
+                </else>
+            </if>
+            <output expression="terbesar" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

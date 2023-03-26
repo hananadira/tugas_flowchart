@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus Vivobook"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-07 09:33:33 PM"/>
+        <attribute name="created" value="QXN1cyBWaXZvYm9vaztMQVBUT1AtSUI1OEk5U0E7MjAyMy0wMy0wNzswOTowODo0MSBQTTszNjA5"/>
+        <attribute name="edited" value="QXN1cyBWaXZvYm9vaztMQVBUT1AtSUI1OEk5U0E7MjAyMy0wMy0wNzswOTozMzozMyBQTTsxOzM3MTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, terbesar" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <input variable="d"/>
+            <assign variable="terbesar" expression="a"/>
+            <if expression="b &gt; terbesar">
+                <then>
+                    <assign variable="terbesar" expression="b"/>
+                </then>
+                <else>
+                    <if expression="c &gt; terbesar">
+                        <then>
+                            <assign variable="terbesar" expression="c"/>
+                        </then>
+                        <else>
+                            <assign variable="terbesar" expression="d"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="terbesar" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus Vivobook"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-07 08:36:19 PM"/>
+        <attribute name="created" value="QXN1cyBWaXZvYm9vaztMQVBUT1AtSUI1OEk5U0E7MjAyMy0wMy0wNzswNzoxMDoxOSBQTTszNjA1"/>
+        <attribute name="edited" value="QXN1cyBWaXZvYm9vaztMQVBUT1AtSUI1OEk5U0E7MjAyMy0wMy0wNzswODozNjoxOSBQTTsxOzM3MjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukan bilangan pertama&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;masukan bilangan kedua&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a &gt; b">
+                <then>
+                    <output expression="&quot; bilangan lebih besar&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; bilangan lebih kecil&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

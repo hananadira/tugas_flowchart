@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="naura"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 06:21:35 PM"/>
+        <attribute name="created" value="bmF1cmE7TkFVUkE7MjAyMy0wMy0wOTswNTo1MDoyOCBQTTsyMTkz"/>
+        <attribute name="edited" value="bmF1cmE7TkFVUkE7MjAyMy0wMy0wOTswNjoyMTozNSBQTTsyOzIyOTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bilanganBulat" type="Integer" array="True" size="100"/>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <declare name="totalAngka" type="Integer" array="False" size=""/>
+            <declare name="angkaMax" type="Integer" array="False" size=""/>
+            <assign variable="angkaMax" expression="0"/>
+            <for variable="totalAngka" start="0" end="99" direction="inc" step="1">
+                <output expression="&quot;masukan angka&quot;" newline="True"/>
+                <input variable="angka"/>
+                <assign variable="bilanganBulat[totalAngka]" expression="angka"/>
+                <if expression="angka &gt; angkaMax">
+                    <then>
+                        <assign variable="angkaMax" expression="angka"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="angkaMax" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
